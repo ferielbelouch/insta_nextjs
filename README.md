@@ -36,3 +36,47 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+npm install firebase
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB_ofZiDc91HG40vwtHu1DkV3485KaCJ8Q",
+  authDomain: "instaapp-49038.firebaseapp.com",
+  projectId: "instaapp-49038",
+  storageBucket: "instaapp-49038.appspot.com",
+  messagingSenderId: "1006061091432",
+  appId: "1:1006061091432:web:7d19c75b15a262918a99dd",
+  measurementId: "G-9QBGK3NHDE"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
+<!-- Firebase -->
+Pour héberger votre site sur Firebase Hosting, vous devez disposer de la CLI Firebase (un outil de ligne de commande).
+Exécutez la commande npm pour installer la CLI ou la mettre à jour.
+npm install -g firebase-tools   
+
+Vous pouvez procéder au déploiement dès maintenant ou ultérieurement. Pour l'effectuer tout de suite, ouvrez une fenêtre de terminal, puis accédez au répertoire racine de votre application Web, ou créez-en un.
+
+Se connecter à Google
+firebase login
+
+Lancer le projet 
+firebase init
+
+Lorsque vous êtes prêt, déployez votre application Web
+firebase deploy
